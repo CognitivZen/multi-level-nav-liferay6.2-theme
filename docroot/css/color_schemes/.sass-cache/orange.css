@@ -1,0 +1,15 @@
+.aui .orange a:hover, .aui .orange a:focus {
+  color: #f99049; }
+.aui .orange .btn-primary {
+  background-image: linear-gradient(#fa9f61, #f87217);
+  border-color: #f87217; }
+  .aui .orange .btn-primary:hover {
+    background: #f87217; }
+.aui .orange #banner {
+  background-image: linear-gradient(#bd5006, #f87217); }
+.aui .orange .jMenu li a:hover {
+  color: #fff; }
+.aui .orange .portlet .portlet-topper {
+  background-image: linear-gradient(#e6e8e9, #d1d1d1);
+  border-color: #f87217; }
+

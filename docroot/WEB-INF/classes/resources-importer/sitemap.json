@@ -1,0 +1,253 @@
+{
+	"layouts": [
+		{
+			"friendlyURL": "/Home",
+			"name": "Home",
+			"title": "Home",
+			"layoutTemplateId": "1_column",
+			"layouts": [
+				{
+					"title": "sub-item1",
+					"name": "sub-item1",
+					"friendlyURL": "/sub-item1",
+					"layoutTemplateId": "2_columns_iii",
+					"layouts": [
+						{
+						"title":"grand-item1",
+						"name":"grand-item1",
+						"friendlyURL": "/grand-item1",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"grand-item2",
+						"name":"grand-item2",
+						"friendlyURL": "/grand-item2",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"grand-item3",
+						"name":"grand-item3",
+						"friendlyURL": "/grand-item3",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"grand-item4",
+						"name":"grand-item4",
+						"friendlyURL": "/grand-item4",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						}
+					],
+					"columns": [
+						[
+							
+						],
+						[
+						]
+	
+					]	
+					
+				},
+				{
+					"title": "sub-item2",
+					"name": "sub-item2",
+					"friendlyURL": "/sub-item2",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[
+						],
+						[
+						]
+			
+					]
+					
+				},
+				{
+					"title": "sub-item3",
+					"name": "sub-item3",
+					"friendlyURL": "/sub-item3",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[
+						],
+						[
+						]
+			
+					]
+					
+				},
+				{
+					"title": "sub-item4",
+					"name": "sub-item4",
+					"friendlyURL": "/sub-item4",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[
+						],
+						[
+						]
+			
+					]
+					
+				}
+				
+			],
+			"columns": [
+				[
+				]
+			]
+		},
+		{
+			"columns": [
+				[
+				]
+			],
+			"friendlyURL": "/aboutus",
+			"name": "About Us",
+			"title": "About Us",
+			"layoutTemplateId": "1_column"
+		},
+		{
+			"columns": [
+				[
+				]
+			],
+			"friendlyURL": "/portfolio",
+			"name": "Portfolio",
+			"title": "Portfolio",
+			"layoutTemplateId": "1_column"
+		},
+		
+		{
+			"friendlyURL": "/features",
+			"name": "Features",
+			"title": "Features",
+			"layoutTemplateId": "1_column",
+			"layouts": [
+				{
+					"title": "Responsive Design",
+					"name": "Responsive Design",
+					"friendlyURL": "/responsive-design",
+					"layoutTemplateId": "2_columns_iii",
+					"layouts": [
+						{
+						"title":"design-item1",
+						"name":"design-item1",
+						"friendlyURL": "/design-item1",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"design-item2",
+						"name":"design-item2",
+						"friendlyURL": "/design-item2",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"design-item3",
+						"name":"design-item3",
+						"friendlyURL": "/design-item3",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						},
+						{
+						"title":"grand-item4",
+						"name":"grand-item4",
+						"friendlyURL": "/design-item4",
+						"layoutTemplateId": "2_columns_iii",
+						"columns": [
+							[],
+							[]
+						]
+						}
+					],
+					"columns": [
+						[
+							
+						],
+						[
+						]
+	
+					]	
+					
+				},
+				{
+					"title": "Color Schemes",
+					"name": "Color Schemes",
+					"friendlyURL": "/color-schemes",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[
+						],
+						[
+						]
+			
+					]
+					
+				},
+				{
+					"title": "Theme Settings",
+					"name": "Theme Settings",
+					"friendlyURL": "/theme-settings",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[	
+						],
+						[
+						]
+			
+					]
+					
+				},
+				{
+					"title": "Version Control",
+					"name": "Version Control",
+					"friendlyURL": "/version-control",
+					"layoutTemplateId": "2_columns_iii",
+					"columns": [
+						[
+
+						],
+						[
+
+						]
+			
+					]
+					
+				}
+				
+			],
+			"columns": [
+				[
+				
+				]
+			]
+		}
+		
+	]
+}
