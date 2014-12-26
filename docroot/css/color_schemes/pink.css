@@ -1,0 +1,45 @@
+$pink: #ff66cc;
+
+.aui{
+	body.skin-pink {
+	}
+
+	.skin-pink a {
+	  color: $pink;
+	}
+	
+	.skin-pink #navigation a:hover {
+		background:$pink;
+	}
+	.skin-pink #navigation li.selected > a {
+		background:$pink;
+	}
+	.skin-pink #navigation li .child-menu {
+		border-top:solid 2px $pink;
+	}
+	.skin-pink #navigation li .child-menu li a:hover {
+		background:$pink;
+	}
+	
+	.skin-pink #features ul li {
+		border:solid 1px $pink;
+		.img-icon {
+			background:$pink;
+		}
+	}
+	.skin-pink #portfolio a {
+		border:solid 1px $pink;
+	}
+	.skin-pink #quicklinks {
+		border:solid 1px $pink;
+		h3 {
+		background:$pink;
+		}
+	}
+	.skin-pink #testimonials {
+		border:solid 1px $pink;
+		h3 {
+			background:$pink;
+		}
+	}
+}

@@ -1,0 +1,118 @@
+<nav class="$nav_css_class" id="navigation" role="navigation">
+	<ul id="jMenu" aria-label="#language ("site-pages")" role="menubar">
+		#foreach ($nav_item in $nav_items)
+			#set ($nav_item_attr_has_popup="")
+			#set ($nav_item_attr_selected="")
+			#set ($nav_item_css_class = "")
+			#set ($nav_item_caret="")
+
+			#if ($nav_item.isSelected())
+				#set ($nav_item_attr_selected="aria-selected='true'")
+				#set ($nav_item_css_class = "selected")
+			#end
+
+			#if ($nav_item.hasChildren())
+				#set ($nav_item_attr_has_popup="aria-haspopup='true'")
+				#set ($nav_item_caret='<b class="icon-caret-down menu-icon"></b>')
+			#end
+
+			<li class="$nav_item_css_class" id="layout_$nav_item.getLayoutId()" $nav_item_attr_selected role="presentation">
+				<a aria-labelledby="layout_$nav_item.getLayoutId()" href="$nav_item.getURL()" $nav_item_attr_has_popup $nav_item.getTarget() role="menuitem"><span>$nav_item.icon() $nav_item.getName() $nav_item_caret</span></a>
+
+				#if ($nav_item.hasChildren())
+					<ul class="child-menu" role="menu">
+						#foreach ($nav_child in $nav_item.getChildren())
+							#set ($nav_child_attr_selected="")
+							#set ($nav_child_css_class = "false")
+							#set ($nav_child_caret="")
+
+							#if ($nav_child.isSelected())
+								#set ($nav_child_attr_selected="aria-selected='true'")
+								#set ($nav_child_css_class = "selected")
+							#end
+							
+							#if ($nav_child.hasChildren())
+								#set ($nav_child_attr_has_popup="aria-haspopup='true'")
+								#set ($nav_child_caret='<b class="icon-caret-right menu-icon"></b>')
+							#end
+
+							<li class="$nav_child_css_class" id="layout_$nav_child.getLayoutId()" $nav_child_attr_selected role="presentation">
+								<a aria-labelledby="layout_$nav_child.getLayoutId()" href="$nav_child.getURL()" $nav_child.getTarget() role="menuitem">$nav_child.getName() $nav_child_caret</a>
+								
+								#if ($nav_child.hasChildren())
+									<ul class="grandchild-menu" role="menu">
+										#foreach ($nav_grandchild in $nav_child.getChildren())
+											#set ($nav_grandchild_attr_selected="")
+											#set ($nav_grandchild_css_class = "false")
+											#set ($nav_grandchild_caret="")
+				
+											#if ($nav_grandchild.isSelected())
+												#set ($nav_grandchild_attr_selected="aria-selected='true'")
+												#set ($nav_grandchild_css_class = "selected")
+											#end
+											
+											#if ($nav_grandchild.hasChildren())
+												#set ($nav_grandchild_attr_has_popup="aria-haspopup='true'")
+												#set ($nav_grandchild_caret='<b class="icon-caret-right menu-icon"></b>')
+											#end
+				
+											<li class="$nav_grandchild_css_class" id="layout_$nav_grandchild.getLayoutId()" $nav_grandchild_attr_selected role="presentation">
+												<a aria-labelledby="layout_$nav_grandchild.getLayoutId()" href="$nav_grandchild.getURL()" $nav_grandchild.getTarget() role="menuitem">$nav_grandchild.getName() $nav_grandchild_caret</a>
+												#if ($nav_grandchild.hasChildren())
+													<ul class="sub-grandchild-menu" role="menu">
+														#foreach ($nav_subgrandchild in $nav_grandchild.getChildren())
+															#set ($nav_subgrandchild_attr_selected="")
+															#set ($nav_subgrandchild_css_class = "false")
+								
+															#if ($nav_subgrandchild.isSelected())
+																#set ($nav_subgrandchild_attr_selected="aria-selected='true'")
+																#set ($nav_subgrandchild_css_class = "selected")
+															#end
+															<li class="$nav_subgrandchild_css_class" id="layout_$nav_subgrandchild.getLayoutId()" $nav_subgrandchild_attr_selected role="presentation">
+																<a aria-labelledby="layout_$nav_subgrandchild.getLayoutId()" href="$nav_subgrandchild.getURL()" $nav_subgrandchild.getTarget() role="menuitem">$nav_subgrandchild.getName()</a>
+															</li>
+														#end
+													</ul>
+												#end
+											</li>
+										#end
+									</ul>
+								#end
+							
+							</li>
+						#end
+					</ul>
+				#end
+			</li>
+		#end
+		#if (!$is_signed_in)
+			<li>
+			<a href="$sign_in_url" id="sign-in" rel="nofollow" alt="$sign_in_text"><i class="icon-user"></i> $sign_in_text </a>
+			</li>
+		#end
+	</ul>
+</nav>
+
+
+<script type="text/javascript">
+(function($){
+		$("#jMenu").jMenu({
+            openClick : false,
+            ulWidth :'150px',
+             TimeBeforeOpening : 100,
+            TimeBeforeClosing : 11,
+            animatedText : false,
+            paddingLeft: 1,
+            absoluteTop:61,
+            effects : {
+                effectSpeedOpen : 150,
+                effectSpeedClose : 150,
+                effectTypeOpen : 'slide',
+                effectTypeClose : 'slide',
+                effectOpen : 'swing',
+                effectClose : 'swing'
+            }
+
+        });
+})(jQuery);
+</script>

@@ -1,0 +1,25 @@
+.aui .skin-yellow a {
+  color: #d1bb00; }
+.aui .skin-yellow #navigation a:hover {
+  background: #d1bb00; }
+.aui .skin-yellow #navigation li.selected > a {
+  background: #d1bb00; }
+.aui .skin-yellow #navigation li .child-menu {
+  border-top: solid 2px #d1bb00; }
+.aui .skin-yellow #navigation li .child-menu li a:hover {
+  background: #d1bb00; }
+.aui .skin-yellow #features ul li {
+  border: solid 1px #d1bb00; }
+  .aui .skin-yellow #features ul li .img-icon {
+    background: #d1bb00; }
+.aui .skin-yellow #portfolio a {
+  border: solid 1px #d1bb00; }
+.aui .skin-yellow #quicklinks {
+  border: solid 1px #d1bb00; }
+  .aui .skin-yellow #quicklinks h3 {
+    background: #d1bb00; }
+.aui .skin-yellow #testimonials {
+  border: solid 1px #d1bb00; }
+  .aui .skin-yellow #testimonials h3 {
+    background: #d1bb00; }
+

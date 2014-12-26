@@ -1,0 +1,31 @@
+$blue:#1F45FC;
+$col2:#4e4e4e;
+.aui {
+	.blue {
+		a {
+		  &:hover, &:focus {
+		  	color: lighten($blue,10%);
+		  }
+		}
+		.btn-primary {
+			background-image: linear-gradient(lighten($blue,15%), $blue);
+			border-color:$blue;
+			&:hover {
+				background:$blue;
+			}
+		}
+		#banner {
+		background-image: linear-gradient(lighten($blue,15%), $blue);
+		}
+		.jMenu li a:hover{
+			color: #fff;
+		}
+		.portlet {
+			.portlet-topper {
+				background-image: linear-gradient(#e6e8e9, #d1d1d1);
+				border-color:$blue;
+			}
+		}
+
+	}
+}
